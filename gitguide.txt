@@ -1,0 +1,42 @@
+Git commands
+
+git status
+
+> Updating changes
+  git add <file>
+> Retracting changes
+  git rm --cached <file>
+
+> Looking at commit history
+  git log
+
+> to stage everything
+  git add . //can use wildcards e.g. *.html
+
+> Committing changes
+  git commit -m <message>
+  git commit -a -m <message> // -a will automatically stage tracked files
+
+adding files is called staging
+
+> Branching - working separately
+  git branch <branch-name>
+
+> Changing branches
+  git checkout <Branch>
+> back to main branch - master
+  git checkout master
+> merging to the main branch
+  git merge <branch-to-merge>
+
+default remote repository is called origin
+
+ git remote // find remote repositories
+
+> pushing changes
+  git push origin master // push committed changes to the remote repository origin to master branch
+
+vim commands
+  i - insert
+  esc - leave insert
+  :wq - leave vim
