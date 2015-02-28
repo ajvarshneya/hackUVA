@@ -23,6 +23,7 @@ public class Image extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
+<<<<<<< HEAD
         iv = (ImageView) findViewById(R.id.imageview);
 
         //The + 1 is because .nextInt is exclusive
@@ -33,6 +34,11 @@ public class Image extends ActionBarActivity {
 
 
       //  loadImage("ram2");
+=======
+
+        iv = (ImageView) findViewById(R.id.ram_image);
+        loadImage("ram2");
+>>>>>>> cd67f07f3302a9d9ca1368915e9560965cfa59db
     }
 
 
