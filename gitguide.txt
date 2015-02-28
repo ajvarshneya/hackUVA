@@ -35,3 +35,8 @@ default remote repository is called origin
 
 > pushing changes
   git push origin master // push committed changes to the remote repository origin to master branch
+
+vim commands
+  i - insert
+  esc - leave insert
+  :wq - leave vim
