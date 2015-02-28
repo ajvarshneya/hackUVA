@@ -1,9 +1,11 @@
 package com.example.admin.ram;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
@@ -14,8 +16,6 @@ public class MainMenu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        iv = (ImageView) findViewById(R.id.imageview);
-        //loadImage();
     }
 
     @Override
@@ -34,8 +34,8 @@ public class MainMenu extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    // loads specified image into image view
-    public void loadImage(String id) {
-        Picasso.with(this).load("http://swaha.me/images/" + id + ".jpg").placeholder(R.drawable.ic_launcher).into(iv);
+    public void onButtonOne(View view) {
+        Intent intent = new Intent(this, Image.class);
+        startActivity(intent);
     }
 }

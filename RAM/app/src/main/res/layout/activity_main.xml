@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".MainMenu"
     android:background="@color/belize">
 
     <!--
@@ -24,10 +24,30 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="111dp" />
 
-    <ImageView
-        android:id="@+id/imageview"
+    <TextView
+        android:id="@+id/mainMenuInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:text="@string/info"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:layout_below="@+id/mainMenuTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:textColor="@color/clouds"
+        android:textSize="25sp"
+        android:layout_below="@+id/mainMenuInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:onClick="onButtonOne"/>
+
+
 
 </RelativeLayout>

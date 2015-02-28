@@ -3,7 +3,7 @@
     package="com.example.admin.ram" >
 
     <uses-permission android:name="android.permission.NFC" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
         android:name="android.hardware.nfc"
@@ -18,15 +18,20 @@
             android:name=".MainMenu"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/RemoveTop">
+            android:theme="@style/RemoveTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".NFC_activity"
             android:label="@string/title_activity_nfc_activity" >
+        </activity>
+        <activity
+            android:name=".Image"
+            android:label="@string/title_activity_image" >
         </activity>
     </application>
 
