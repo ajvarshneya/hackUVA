@@ -1,6 +1,2 @@
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+# Mac files
 .DS_Store
-/build
