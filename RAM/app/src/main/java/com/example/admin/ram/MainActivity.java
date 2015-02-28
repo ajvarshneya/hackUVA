@@ -35,8 +35,7 @@ public class MainActivity extends Activity {
     }
 
     // loads specified image into image view
-    public void loadImage() {
-        Picasso.with(this).load("http://i.imgur.com/DvpvklR.png").into(iv);
-        Picasso.with(this).load("http://swaha.me/images/ram1.jpg").placeholder(R.drawable.ic_launcher).into(iv);
+    public void loadImage(String id) {
+        Picasso.with(this).load("http://swaha.me/images/" + id + ".jpg").placeholder(R.drawable.ic_launcher).into(iv);
     }
 }
