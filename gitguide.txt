@@ -1,0 +1,21 @@
+Git commands
+
+git status
+
+> Updating changes
+  git add <file>
+> Retracting changes
+  git rm --cached <file>
+
+> Looking at commit history
+  git log
+
+> to stage everything
+  git add . //can use wildcards e.g. *.html
+
+>
+
+adding files is called staging
+
+> Branching - working separately
+  git branch "branch-name"
