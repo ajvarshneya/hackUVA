@@ -21,7 +21,6 @@
             android:theme="@style/RemoveTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
@@ -41,6 +40,8 @@
         </activity>
         <activity
             android:name=".Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/RemoveTop"
             android:label="@string/title_activity_image" >
         </activity>
     </application>

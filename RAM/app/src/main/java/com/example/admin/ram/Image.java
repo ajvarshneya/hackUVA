@@ -18,7 +18,7 @@ public class Image extends ActionBarActivity {
         setContentView(R.layout.activity_image);
 
         iv = (ImageView) findViewById(R.id.imageview);
-        loadImage("ram1");
+        loadImage("ram2");
     }
 
 
