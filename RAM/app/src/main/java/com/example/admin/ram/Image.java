@@ -15,9 +15,8 @@ public class Image extends ActionBarActivity {
     ImageView iv;
     Random randomGenerator = new Random();
 
-    int max = 4;
-    int min = 1; //To give randomGenerator a range
-    int randomRamInt = randomGenerator.nextInt(4);
+    //int min = 1; //To give randomGenerator a range
+    //int randomRamInt = randomGenerator.nextInt(4);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +24,15 @@ public class Image extends ActionBarActivity {
         setContentView(R.layout.activity_image);
         iv = (ImageView) findViewById(R.id.ram_image);
 
+        Random generator = new Random();
+        int rand = generator.nextInt(R.integer.max_rams) + 1;
+        loadImage("ram" + rand);
+
+        /*
         //The + 1 is because .nextInt is exclusive
         String randomRamID = "ram" + Integer.toString(randomGenerator.nextInt(max - min + 1) + min);
         loadImage(randomRamID);
+        */
     }
 
 
