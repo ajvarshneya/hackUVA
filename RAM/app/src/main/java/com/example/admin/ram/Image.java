@@ -35,11 +35,6 @@ public class Image extends ActionBarActivity {
 
         //textView.setText("" + max);
 
-        /*
-        //The + 1 is because .nextInt is exclusive
-        String randomRamID = "ram" + Integer.toString(randomGenerator.nextInt(max - min + 1) + min);
-        loadImage(randomRamID);
-        */
     }
 
 
