@@ -12,11 +12,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.Random;
 
-
 public class Image extends ActionBarActivity {
 
     ImageView iv;
-    //Random randomGenerator = new Random();
 
     //int min = 1; //To give randomGenerator a range
     //int randomRamInt = randomGenerator.nextInt(4);
@@ -34,6 +32,7 @@ public class Image extends ActionBarActivity {
         loadImage("ram" + rand);
 
         //TextView textView = (TextView) findViewById(R.id.tv_image);
+
         //textView.setText("" + max);
 
         /*
@@ -68,6 +67,6 @@ public class Image extends ActionBarActivity {
 
     // loads specified image into image view
     public void loadImage(String id) {
-        Picasso.with(this).load("http://swaha.me/images/" + id + ".jpg").placeholder(R.drawable.ic_launcher).into(iv);
+        Picasso.with(this).load("http://swaha.me/images/" + id + ".jpg").fit().into(iv);
     }
 }
