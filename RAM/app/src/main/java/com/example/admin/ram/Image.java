@@ -7,13 +7,9 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
-import java.util.Random;
-
-
 public class Image extends ActionBarActivity {
 
     ImageView iv;
-    Random randomGenerator = new Random();
 
     //int min = 1; //To give randomGenerator a range
     //int randomRamInt = randomGenerator.nextInt(4);
@@ -24,8 +20,7 @@ public class Image extends ActionBarActivity {
         setContentView(R.layout.activity_image);
         iv = (ImageView) findViewById(R.id.ram_image);
 
-        Random generator = new Random();
-        int rand = generator.nextInt(R.integer.max_rams) + 1;
+        int rand = (int) Math.floor(59*Math.random()) + 1;
         loadImage("ram" + rand);
 
         /*
@@ -60,6 +55,6 @@ public class Image extends ActionBarActivity {
 
     // loads specified image into image view
     public void loadImage(String id) {
-        Picasso.with(this).load("http://swaha.me/images/" + id + ".jpg").placeholder(R.drawable.ic_launcher).into(iv);
+        Picasso.with(this).load("http://swaha.me/images/" + id + ".jpg").resizeDimen(R.dimen.image_width, R.dimen.image_height).into(iv);
     }
 }
