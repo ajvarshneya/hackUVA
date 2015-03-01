@@ -1,18 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
     android:background="@color/asbestos"
-    tools:context="com.example.admin.ram.Image">
+    tools:context="com.example.admin.ram.Image"
+    android:weightSum="1">
 
     <ImageView
         android:id="@+id/ram_image"
-        android:scaleType="fitCenter"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
         android:onClick="onTouchRam"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.7" />
 
     <TextView
         style="@style/TextShadow"
@@ -24,7 +29,9 @@
         android:textSize="25sp"
         android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
 
 
-</RelativeLayout>
+</LinearLayout>
