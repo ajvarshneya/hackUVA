@@ -2,24 +2,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/belize"
+    android:background="@color/asbestos"
     tools:context="com.example.admin.ram.Image">
-<!--
-    <TextView
-        android:id="@+id/tv_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="daev\'s not here"
-        android:textColor="@color/clouds"
-        android:textSize="25sp"/> -->
 
     <ImageView
         android:id="@+id/ram_image"
-        android:scaleType="center"
+        android:scaleType="fitCenter"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onTouchRam"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        style="@style/TextShadow"
+        android:id="@+id/tv_image"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        />
+        android:textColor="@color/clouds"
+        android:text="There"
+        android:textSize="25sp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
