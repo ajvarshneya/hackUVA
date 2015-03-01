@@ -33,8 +33,8 @@ public class Image extends ActionBarActivity {
         int rand = generator.nextInt(max) + 1;
         loadImage("ram" + rand);
 
-        TextView textView = (TextView) findViewById(R.id.tv_image);
-        textView.setText("" + max);
+        //TextView textView = (TextView) findViewById(R.id.tv_image);
+        //textView.setText("" + max);
 
         /*
         //The + 1 is because .nextInt is exclusive
