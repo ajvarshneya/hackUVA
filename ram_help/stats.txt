@@ -1,0 +1,6 @@
+Stats for a RAM
+  id, int - recognize one RAM from another
+  health, double
+  defense, double
+  intelligence, double
+  luck, int 
