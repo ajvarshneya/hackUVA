@@ -11,4 +11,12 @@
         android:layout_height="wrap_content"
         />
 
+    <TextView
+        android:id="@+id/tv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="daev\'s not here"
+        android:textColor="@color/clouds"
+        android:textSize="25sp"/>
+
 </RelativeLayout>
