@@ -1,3 +1,5 @@
+-> Links are deprecated, sorry!
+
 App made for hackUVA to "download RAM" to your android device. The app takes pictures from a github pages hosted website and displays them.
 Includes:
 - [Ram](http://swaha.me/images/ram22.jpg)s
